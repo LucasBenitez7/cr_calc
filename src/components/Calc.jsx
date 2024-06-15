@@ -54,7 +54,7 @@ export function Calc() {
   return (
     <div className="fixed flex flex-col right-0 left-0 text-center bg-[#182836] w-full max-w-lg min-w-[270px] m-auto rounded-xl h-[100vh] px-4 pb-24 justify-end">
       <div className="flex flex-col text-end">
-        <p className="text-xl font-medium flex justify-end break-all">
+        <p className="text-2xl font-medium flex justify-end break-all">
           {expression}
         </p>
         <h1 className="mt-2 mb-5 justify-end text-[3em] flex font-semibold break-all">

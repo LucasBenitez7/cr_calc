@@ -7,13 +7,10 @@ export function BotonDelete(props) {
     </button>
   );
 }
-
-
 BotonDelete.propTypes = {
   manejarClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
 };
-
 
 export function Boton(props) {
   return (
@@ -22,7 +19,6 @@ export function Boton(props) {
     </button>
   );
 }
-
 Boton.propTypes = {
   manejarClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
@@ -35,7 +31,6 @@ export function BotonClear(props) {
     </button>
   );
 }
-
 BotonClear.propTypes = {
   manejarClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
@@ -43,12 +38,11 @@ BotonClear.propTypes = {
 
 export function BotonOperador(props) {
   return (
-    <button onClick={()=>props.manejarClick(props.children)} className="bg-[#031958] rounded-2xl active:bg-[#062372] shadow-[0px_0px_2px_1px_rgba(0,_0,_0,_1)]">
+    <button onClick={()=>props.manejarClick(props.children)} className="bg-[#031958] rounded-2xl active:bg-[#062372] shadow-[0px_0px_2px_1px_rgba(0,_0,_0,_1)] text-4xl">
       {props.children}
     </button>
   );
 }
-
 BotonOperador.propTypes = {
   manejarClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
@@ -56,12 +50,11 @@ BotonOperador.propTypes = {
 
 export function BotonIgual(props) {
   return (
-    <button onClick={()=>props.manejarClick(props.children)} className="bg-[#031958] rounded-2xl active:bg-[#062372] shadow-[0px_0px_2px_1px_rgba(0,_0,_0,_1)]">
+    <button onClick={()=>props.manejarClick(props.children)} className="bg-[#031958] rounded-2xl active:bg-[#062372] shadow-[0px_0px_2px_1px_rgba(0,_0,_0,_1)] py-1 text-3xl">
       {props.children}
     </button>
   );
 }
-
 BotonIgual.propTypes = {
   manejarClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,

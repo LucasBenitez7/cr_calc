@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from "prop-types";
+
 const DeleteIcon = ({ size = 23, color = "#fff" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -16,4 +17,10 @@ const DeleteIcon = ({ size = 23, color = "#fff" }) => (
     <line x1="12" y1="9" x2="18" y2="15"></line>
   </svg>
 );
+
+DeleteIcon.propTypes = {
+  size: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default DeleteIcon;
